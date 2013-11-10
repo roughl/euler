@@ -11,5 +11,8 @@ BEGIN {
 		score=score+j;
     }
 	total_score = total_score + score*NR;
-    printf("%d = %d\n", score*NR, total_score);
+    #printf("%d = %d\n", score*NR, total_score);
+}
+END {
+	printf("%d\n", total_score)
 }
